@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Registration</class>
+ <widget class="QWidget" name="Registration">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>772</width>
+    <height>542</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Password_Comrade</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme=":\new\images\app.ico">
+    <normaloff>.</normaloff>.</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Registration{
+	background: #72f7cf;
+}
+#registrationLabel{
+	color:#d61818;
+}
+
+#madam{
+	border-image: url(:/new/images/log.png);
+     background-repeat: no-repeat;
+	border:0px;
+}
+
+#registrationButton {
+	background:#ed1c73;
+	color:#fff;
+	border-radius:15px;
+	font-size:28px;
+}
+#registrationButton:hover{
+	 background:#ed1c53 ;
+}
+#registrationButton:pressed{
+	 background:#ed1c73;
+	 font-size:30px;
+}
+#newpasswordInput2 {
+	border-radius:15px;
+	font-size:28px;
+}
+#newpasswordInput1{
+	border-radius:15px;
+	font-size:28px;
+}
+
+#newLoginInput{
+	border-radius:15px;
+	font-size:28px;
+}
+#registration_next{
+	font-size:26px;
+	background: #72f7cf;
+	border:0px;
+}
+
+#boyBox{border:0px;}
+
+#backToLogin{
+	font-size:26px;
+	background: #72f7cf;
+	border:0px;
+}
+#backToLogin:hover{background: #8ff7cf;}
+#backToLogin:pressed{font-size:28px;}</string>
+  </property>
+  <widget class="QLabel" name="registrationLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>771</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>Nirmala UI</family>
+     <pointsize>28</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Регистрация</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>90</y>
+     <width>771</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QGroupBox" name="boyBox">
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="boy">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>90</y>
+         <width>361</width>
+         <height>361</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="src.qrc">:/new/images/reg.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="gridLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-30</y>
+         <width>411</width>
+         <height>441</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="horizontalSpacing">
+         <number>6</number>
+        </property>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="registrationButton">
+          <property name="text">
+           <string>Зарегестрироваться</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLineEdit" name="newpasswordInput2">
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLineEdit" name="newpasswordInput1">
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLineEdit" name="newLoginInput"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="regError">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>410</y>
+         <width>411</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="backToLogin">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Назад</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
+ <connections/>
+</ui>
